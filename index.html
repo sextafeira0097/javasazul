@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades de JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <style>
+ body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* Um azul bem claro para o fundo */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #0056b3; /* Azul mais escuro para o título */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .atividade {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            border: 1px solid #b0c4de; /* Borda azul clara */
+        }
+
+        h2 {
+            color: #0056b3;
+            border-bottom: 2px solid #add8e6; /* Linha azul clara abaixo dos títulos */
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        button {
+            background-color: #007bff; /* Azul para botões */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #0056b3; /* Azul mais escuro no hover */
+        }
+
+        input[type="number"],
+        input[type="text"] {
+            padding: 8px;
+            border: 1px solid #a8d1ff; /* Borda azul mais clara para inputs */
+            border-radius: 4px;
+            margin-right: 10px;
+            font-size: 0.95em;
+        }
+
+        .resultado {
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #e6f7ff; /* Fundo azul bem claro para resultados */
+            border: 1px solid #a8d1ff;
+            border-radius: 4px;
+            font-size: 1em;
+            color: #004085; /* Cor do texto para resultados */
+        }
+
+        .caixa {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #a8d1ff;
+            border-radius: 4px;
+            background-color: #ffffff;
+        }
+
+        .destacado {
+            color: #004085;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Atividades JavaScript</h1>
+
+    <div class="atividade">
+        <h2>1. Olá Mundo</h2>
+        <button onclick="olaMundo()">Executar</button>
+        <div id="resultado1" class="resultado"></div>
+    </div>
+
+    <div class="atividade">
+        <h2>2. Soma de 2 Inteiros</h2>
+        <input type="number" id="num1" placeholder="Número 1">
+        <input type="number" id="num2" placeholder="Número 2">
+        <button onclick="somar()">Somar</button>
+        <div id="resultado2" class="resultado"></div>
+    </div>
+
+    <div class="atividade">
+        <h2>3. Alterar Propriedade por ID</h2>
+        <p id="paragrafoId">Este é um parágrafo.</p>
+        <button onclick="alterarPorId()">Alterar Cor</button>
+    </div>
+
+    <div class="atividade">
+        <h2>4. Alterar Propriedade por Name</h2>
+        <input type="text" name="nomeInput" value="Texto Original">
+        <button onclick="alterarPorName()">Alterar Valor</button>
+    </div>
+
+    <div class="atividade">
+        <h2>5. Alterar Propriedade por Class</h2>
+        <div class="caixa">Caixa 1</div>
+        <div class="caixa">Caixa 2</div>
+        <button onclick="alterarPorClasse()">Alterar Fundo</button>
+    </div>
+
+    <script src="javas.js"></script>
+</body>
+
+</html>
